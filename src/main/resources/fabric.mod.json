@@ -1,0 +1,29 @@
+{
+    "schemaVersion": 1,
+    "id": "nowplaying",
+    "version": "${version}",
+    "name": "Now Playing",
+    "description": "",
+    "authors": [
+        "BonfireMC"
+    ],
+    "contact": {},
+    "license": "CC0-1.0",
+    "icon": "assets/nowplaying/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "xyz.bonfiremc.nowplaying.client.NowPlayingClient"
+        ],
+        "main": [
+            "xyz.bonfiremc.nowplaying.NowPlaying"
+        ]
+    },
+    "mixins": [
+        "nowplaying.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "minecraft": "${minecraft_version}"
+    }
+}
